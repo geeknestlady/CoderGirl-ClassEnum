@@ -7,25 +7,25 @@ namespace Test
     public class ProgramTest
     {
         [Fact]
-        public void Test_CourseType_Contains_WorldHistory()
+        public void Test_CourseSubject_Contains_WorldHistory()
         {
-            string[] enumNames = Enum.GetNames(typeof(CourseType));
+            string[] enumNames = Enum.GetNames(typeof(CourseSubject));
 
-            Assert.Contains(enumNames, type => type == "WorldHistory");
+            Assert.Contains(enumNames, name => name == "WorldHistory");
         }
 
         [Fact]
-        public void Test_CourseType_Contains_Geography()
+        public void Test_CourseSubject_Contains_Geography()
         {
-            string[] enumNames = Enum.GetNames(typeof(CourseType));
+            string[] enumNames = Enum.GetNames(typeof(CourseSCourseSubject));
 
-            Assert.Contains(enumNames, type => type == "Geography");
+            Assert.Contains(enumNames, name => name == "Geography");
         }
 
         [Fact]
-        public void Test_CourseType_Contains_AtLeastEightSubjects()
+        public void Test_CourseSubject_Contains_AtLeastEightSubjects()
         {
-            string[] enumNames = Enum.GetNames(typeof(CourseType));
+            string[] enumNames = Enum.GetNames(typeof(CourseSubject));
 
             Assert.True(enumNames.Length > 7);
         }
