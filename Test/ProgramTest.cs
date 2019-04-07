@@ -17,7 +17,7 @@ namespace Test
         [Fact]
         public void Test_CourseSubject_Contains_Geography()
         {
-            string[] enumNames = Enum.GetNames(typeof(CourseSCourseSubject));
+            string[] enumNames = Enum.GetNames(typeof(CourseSubject));
 
             Assert.Contains(enumNames, name => name == "Geography");
         }
